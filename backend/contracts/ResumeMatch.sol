@@ -7,6 +7,7 @@ import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 /// @title ResumeMatch - Privacy-preserving resume matching DApp
 /// @notice Allows job seekers to submit encrypted resume profiles and employers to submit encrypted job requirements
 /// @notice Performs encrypted matching score calculations on-chain without revealing any sensitive data
+/// @dev Uses FHEVM for fully homomorphic encryption operations
 contract ResumeMatch is ZamaEthereumConfig {
     // Constants
     uint32 public constant SKILL_VECTOR_SIZE = 10; // 10-dimensional skill vector
